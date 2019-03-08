@@ -141,8 +141,8 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                            <h2 id="Name"></h2>
-                            <img id="Photo" src="#" height="200" width="300">
+                        <h2 id="Name"></h2>
+                        <img id="Photo" src="#" height="200" width="300">
                     </div>
                     <div class="modal-footer">
                         <button type="button" id="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -189,19 +189,19 @@
         $.post("/data/friends", newUser, function (data) {
             $("#Name").text(data.name);
             $("#Photo").attr("src", data.photo);
-            $("#resultsModal").modal("toggle");
+            $("#resultsModal").modal("show");
             $("#name").val(""),
-            $("#photo").val(""),
-            $('#Question1').val(""),
-            $('#Question2').val(""),
-            $('#Question3').val(""),
-            $('#Question4').val(""),
-            $('#Question5').val(""),
-            $('#Question6').val(""),
-            $('#Question7').val(""),
-            $('#Question8').val(""),
-            $('#Question9').val(""),
-            $('#Question10').val("")
+                $("#photo").val(""),
+                $('#Question1').val(""),
+                $('#Question2').val(""),
+                $('#Question3').val(""),
+                $('#Question4').val(""),
+                $('#Question5').val(""),
+                $('#Question6').val(""),
+                $('#Question7').val(""),
+                $('#Question8').val(""),
+                $('#Question9').val(""),
+                $('#Question10').val("")
         });
     });
 </script>
