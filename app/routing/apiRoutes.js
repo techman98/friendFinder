@@ -30,7 +30,6 @@ module.exports = function (app) {
     
         var newFriend = friends[newFriend];
         res.json(newFriend);
-    
     });
 
 };
